@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>3-column preview card component</title>
+
+  <style>
+    :root {
+      --clr-bright-orange: hsl(31, 77%, 52%);
+      --clr-medium-cyan: hsl(184, 100%, 22%);
+      --clr-dark-cyan: hsl(179, 100%, 13%);
+      /* Below Paragraphs and heading, buttons */
+      --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+      --clr-very-light-gray: hsl(0, 0%, 95%);
+    }
+
+    body {
+      font-size: 15px;
+    }
+
+    .btn-sedan {
+      background-color: var(--clr-very-light-gray);
+      color: var(--clr-bright-orange);
+    }
+
+    .btn-sedan:hover {
+      background-color: var(--clr-bright-orange);
+      color: var(--clr-transparent-white);
+    }
+  </style>
+</head>
+<body>
+  <div class="container vh-100 d-flex flex-column align-items-center justify-content-center">
+    <div class="row">
+      <div class="col-sm-4 border py-5 px-5" style="background-color: var(--clr-bright-orange);">
+        <h4 class="card-title d-flex flex-column mb-5 gap-2" style="color: var(--clr-very-light-gray);"><img class="w-25" src="./images/icon-sedans.svg" alt="sedans">Sedans</h4>
+
+        <div class="card-body p-0 mb-5">
+          <p class="card-text" style="color: var(--clr-very-light-gray);">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        </div>
+
+        <a href="#" class="btn border btn-sedan">Learn More</a>
+      </div>
+
+      <div class="col-sm-4 border py-5 px-5" style="background-color: var(--clr-medium-cyan);">
+        <h4 class="card-title d-flex flex-column mb-5 gap-2" style="color: var(--clr-very-light-gray);"><img class="w-25" src="./images/icon-suvs.svg" alt="sedans">SUVS</h4>
+
+        <div class="card-body p-0 mb-5">
+          <p class="card-text" style="color: var(--clr-very-light-gray);">Take an SUV for its spacious interior, power and versatility. Perfect for you next family vacation and off-rounds adventures.</p>
+        </div>
+
+        <a href="#" class="btn border btn-suv" style="background-color: var(--clr-very-light-gray); color: var(--clr-medium-cyan);">Learn More</a>
+      </div>
+
+      <div class="col-sm-4 border py-5 px-5" style="background-color: var(--clr-dark-cyan);">
+        <h4 class="card-title d-flex flex-column mb-5 gap-2" style="color: var(--clr-very-light-gray);"><img class="w-25" src="./images/icon-luxury.svg" alt="sedans">Luxury</h4>
+
+        <div class="card-body p-0 mb-5">
+          <p class="card-text" style="color: var(--clr-very-light-gray);">Cruise and the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        </div>
+
+        <a href="#" class="btn border btn-luxury" style="background-color: var(--clr-very-light-gray); color: var(--clr-dark-cyan);">Learn More</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Julio Silva</a>.
+    </div>
+  </div>
+</body>
+</html>
